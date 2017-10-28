@@ -1,0 +1,64 @@
+Exception in thread Thread-12:
+Traceback (most recent call last):
+  File "/usr/lib/python3.4/threading.py", line 920, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.4/threading.py", line 868, in run
+    self._target(*self._args, **self._kwargs)
+  File "sender.py", line 299, in _timeout_threading
+    self._send_segment(self.LastByteAcked + self.segments_length[self.LastByteAcked])
+TypeError: 'NoneType' object is not subscriptable
+
+Exception in thread Thread-11:
+Traceback (most recent call last):
+  File "/usr/lib/python3.4/threading.py", line 920, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.4/threading.py", line 868, in run
+    self._target(*self._args, **self._kwargs)
+  File "sender.py", line 271, in _transmit_threading
+    if self.LastByteSent - self.LastByteAcked + self.segments_length[self.NextSeqNum] <= self.MWS:
+TypeError: 'NoneType' object is not subscriptable
+
+Exception in thread Thread-14:
+Traceback (most recent call last):
+  File "/usr/lib/python3.4/threading.py", line 920, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.4/threading.py", line 868, in run
+    self._target(*self._args, **self._kwargs)
+  File "sender.py", line 271, in _transmit_threading
+    if self.LastByteSent - self.LastByteAcked + self.segments_length[self.NextSeqNum] <= self.MWS:
+TypeError: 'NoneType' object is not subscriptable
+
+Exception in thread Thread-15:
+Traceback (most recent call last):
+  File "/usr/lib/python3.4/threading.py", line 920, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.4/threading.py", line 868, in run
+    self._target(*self._args, **self._kwargs)
+  File "sender.py", line 294, in _timeout_threading
+    if self.timer.isExpired():
+  File "/mnt/c/Users/Administrator/OneDrive/2017sem_2/9331/assignment1/V3/helper.py", line 53, in isExpired
+    return time.time() - self.start_time >= self.timeout
+TypeError: unsupported operand type(s) for -: 'float' and 'NoneType'
+
+Exception in thread Thread-18:
+Traceback (most recent call last):
+  File "/usr/lib/python3.4/threading.py", line 920, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.4/threading.py", line 868, in run
+    self._target(*self._args, **self._kwargs)
+  File "sender.py", line 294, in _timeout_threading
+    if self.timer.isExpired():
+  File "/mnt/c/Users/Administrator/OneDrive/2017sem_2/9331/assignment1/V3/helper.py", line 53, in isExpired
+    return time.time() - self.start_time >= self.timeout
+TypeError: unsupported operand type(s) for -: 'float' and 'NoneType'
+
+Traceback (most recent call last):
+  File "sender.py", line 397, in <module>
+    sender.send()
+  File "sender.py", line 106, in send
+    self._release()
+  File "sender.py", line 327, in _release
+    self._fin_wait1()
+  File "sender.py", line 340, in _fin_wait1
+    data, addr = self.socket.recvfrom(1024)
+KeyboardInterrupt

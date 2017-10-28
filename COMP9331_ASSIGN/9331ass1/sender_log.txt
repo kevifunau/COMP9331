@@ -1,0 +1,45 @@
+snd   0.133   	S	1997	0	0
+rcv   0.832   	SA	47909	0	1998
+snd   0.878   	A	1998	0	47910
+snd   1.596   	D	1998	100	47910
+snd   1.673   	D	2098	100	47910
+drop  1.708   	D	2198	100	47910
+rcv   12.197  	A	47910	0	2098
+snd   23.315  	D	2298	100	47910
+rcv   41.140  	A	47910	0	2198
+snd   46.376  	D	2398	100	47910
+rcv   63.235  	A	47910	0	2198
+rcv   63.504  	A	47910	0	2198
+snd   150.490 	D	2198	100	47910
+rcv   186.766 	A	47910	0	2498
+snd   193.212 	D	2498	100	47910
+snd   193.262 	D	2598	100	47910
+rcv   193.337 	A	47910	0	2598
+snd   198.926 	D	2698	100	47910
+snd   205.203 	D	2798	100	47910
+rcv   216.535 	A	47910	0	2698
+snd   221.742 	D	2898	100	47910
+rcv   269.144 	A	47910	0	2798
+rcv   269.228 	A	47910	0	2898
+rcv   269.259 	A	47910	0	2998
+snd   288.026 	D	2998	100	47910
+drop  288.069 	D	3098	100	47910
+rcv   294.418 	A	47910	0	3098
+rcv   294.480 	A	47910	0	3098
+snd   305.201 	D	3198	100	47910
+snd   311.630 	D	3298	100	47910
+rcv   340.765 	A	47910	0	3098
+snd   416.176 	D	3098	100	47910
+rcv   416.206 	A	47910	0	3398
+snd   422.319 	D	3398	100	47910
+rcv   422.365 	A	47910	0	3498
+snd   428.859 	D	3498	93	47910
+rcv   453.955 	A	47910	0	3591
+snd   454.146 	F	3591	0	47910
+rcv   455.518 	FA	47910	0	3592
+snd   455.549 	A	3592	0	47911
+Amount of (original) Data Transferred(in bytes): 1593
+Number of Data Segments Sent (excluding retransmissions): 16
+Number of (all)packets dropped:(by the PLD module) 2
+Number of Retransmitted segments: 2
+Number of Duplicate Acknowledgements received: 4
